@@ -1,0 +1,24 @@
+import React from 'react';
+import Image from 'next/image';
+import styles from "./../styles/landing.module.css";
+
+function Landing(){
+    
+    return(
+        <div className={styles.landing} styles ={{
+            textAlign: "center",
+            margin: "10rem"
+        }}>
+            <Image 
+              src="/laptop.jpg"
+              alt="laptop logo"
+              width={200}
+              height={200}
+              />
+            <h1>Swarupap.in</h1>
+            <p>The website is being updated</p>
+        </div>
+    )
+}
+
+export default Landing;
